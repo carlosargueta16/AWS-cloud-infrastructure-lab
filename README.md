@@ -19,6 +19,9 @@ The objective was to build a custom AWS network, deploy a Linux web server, esta
 
 ## Infrastructure Architecture
 
+![Northstar Solutions AWS Architecture](AWS-001-Northstar-Architecture.png)
+
+
 - **AWS Region:** us-east-2 (Ohio)
 - **VPC:** 10.20.0.0/16
 - **Public Subnet:** 10.20.1.0/24
