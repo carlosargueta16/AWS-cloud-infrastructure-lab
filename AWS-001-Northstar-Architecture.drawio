@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="-Nwo-5CSX1Bo05pxSTAx">
+    <mxGraphModel dx="772" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontStyle=1" value="Internet" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontStyle=1" value="Internet Gateway" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;dashed=1;dashPattern=12 12;fillStyle=auto;align=left;" value="&lt;b&gt;&amp;nbsp; VPC 10.20.0.0 /16&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="535" x="122.5" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontStyle=1" value="Private subnet&lt;div&gt;10.20.2.0 /24&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="490" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontStyle=1" value="Public subnet: 10.20.1.0 /24&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="340" x="130" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fontStyle=1" value="&lt;div&gt;EC2 + Apache&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;HTTP Port 80&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Session Manager&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-weight: normal;&quot;&gt;Security Group: northstar-web-sg&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-weight: normal;&quot;&gt;Inbound: TCP 80 from 0.0.0.0/0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="140" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-9" edge="1" parent="1" source="6UpG--TF3OkPr0TCPNb8-3" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6UpG--TF3OkPr0TCPNb8-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="190" as="sourcePoint" />
+            <mxPoint x="310" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-12" edge="1" parent="1" source="6UpG--TF3OkPr0TCPNb8-8" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="389.5" y="260" as="sourcePoint" />
+            <mxPoint x="389.5" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6UpG--TF3OkPr0TCPNb8-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Public Route: 0.0.0.0/0 → IGW&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="390" y="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
